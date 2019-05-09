@@ -1,0 +1,38 @@
+
+<ion-header>
+	<ion-toolbar>
+		<ion-title>Edit Profile</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+	<app-loading *ngIf="busy"></app-loading>
+
+	<div *ngIf="!busy">
+
+		<input type="file" #fileBtn class="filebtn" (change)="uploadPic($event)" />
+
+		<div>
+		</div>
+
+
+		<div class="profile-info">
+			<ion-item>
+				<ion-input  [(ngModel)]="username"></ion-input>
+			</ion-item>
+
+			<ion-item>
+				<ion-input placeholder="New Password" [(ngModel)]="newpassword"></ion-input>
+			</ion-item>
+
+			<ion-item>
+				<ion-input placeholder="Enter Old Password"[(ngModel)]="password"></ion-input>
+			</ion-item>
+						<br><br>
+			<ion-button fill="solid" expand="block" color="dark" (click)="updateDetails()">Save</ion-button>
+		</div>
+
+	</div>
+
+</ion-content>

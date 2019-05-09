@@ -1,0 +1,33 @@
+<ion-header>
+	<ion-toolbar>
+	  <ion-title text-center>Register</ion-title>
+	</ion-toolbar>
+  </ion-header>
+  <br>
+  <ion-content padding>
+	  <ion-list>
+  
+		  <ion-item>
+			<ion-input placeholder="your@email.com" type="email" [(ngModel)]="username"></ion-input>
+		  </ion-item>
+		<br>
+		  <ion-item>
+			<ion-input placeholder="Password" type="password" [(ngModel)]="password"></ion-input>
+		  </ion-item>
+					<br>
+		  <ion-item>
+			<ion-input placeholder="Confirm Password" type="password" [(ngModel)]="cpassword"></ion-input>
+		  </ion-item>
+		
+		</ion-list>
+    <br><br>
+		<ion-button  fill="solid" expand="block" (click)="register()">Signup</ion-button>
+		<br><br>
+		<ion-row>
+			<div text-center id="pip">I already have an
+		<a color="wihte" routerLink='/login'> account</a>
+			</div>
+	</ion-row>
+
+	</ion-content>
+	
