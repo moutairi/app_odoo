@@ -9,13 +9,29 @@
 .image {
 	margin-left: 1px;
 	margin-right: 1px;
+
+
 }
 
-.main-image, .user-image {
-	width: 200px;
-	height: 200px;
+
+.main-image {
+	width: 120px;
+	height: 120px;
+	border-radius:50%;
+
+
 }
 ion-title{
     --color:#875A7B;
    
+}
+ion-button{
+    --background: #00A09D;
+}
+p{
+color:#875A7B;
+padding-left: 40px;
+padding-right: 40px;
+padding-bottom: 60px;
+
 }

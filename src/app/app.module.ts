@@ -6,8 +6,6 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
-import { SQLite } from '@ionic-native/sqlite';
-import { IonicStorageModule } from '@ionic/storage';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import firebaseConfig from './firebase'
@@ -26,7 +24,6 @@ import { ShareModule } from './share.module';
 	  BrowserModule, 
 	  IonicModule.forRoot(), 
 		AppRoutingModule,
-		IonicStorageModule.forRoot(),
 	  AngularFireModule.initializeApp(firebaseConfig),
 	  AngularFireAuthModule,
 	  AngularFirestoreModule,
@@ -39,7 +36,7 @@ import { ShareModule } from './share.module';
 	{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
 	UserService,
 	AuthService,
-	SQLite
+	
   ],
   bootstrap: [AppComponent]
 })

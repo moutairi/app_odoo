@@ -109,7 +109,7 @@ export class EditProfilePage implements OnInit {
 
 		await this.presentAlert('Done!', 'Your profile was updated!')
 
-		this.router.navigate(['/tabs/feed'])
+		this.router.navigate(['/tabs/profile'])
 	}
 
 }
